@@ -2,10 +2,20 @@
 node_modules/
 dist/
 
-# 环境变量 (千万不要上传这个！)
+# 环境变量（千万不要上传，含密钥）
 .env
 .env.local
 .env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+venv_quant/
+venv/
+
+# 数据库与运行产物
+*.db
+logs/
 
 # 编辑器配置
 .vscode/
@@ -20,3 +30,9 @@ Thumbs.db
 # 日志文件
 *.log
 npm-debug.log*
+
+# AI 工具本地配置（不上传）
+.claude/
+.gitnexus/
+CLAUDE.md
+AGENTS.md
